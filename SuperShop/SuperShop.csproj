@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8984011E-F7E2-4307-989B-4114FEAC1C6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SuperShop</RootNamespace>
+    <AssemblyName>SuperShop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContorlEmployeeCheckout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContorlEmployeeCheckout.Designer.cs">
+      <DependentUpon>ContorlEmployeeCheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassDataAccess.cs" />
+    <Compile Include="ControlEmployeeEditProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlEmployeeEditProduct.Designer.cs">
+      <DependentUpon>ControlEmployeeEditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlManagerEditUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlManagerEditUser.Designer.cs">
+      <DependentUpon>ControlManagerEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlEmployeeNewProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlEmployeeNewProduct.Designer.cs">
+      <DependentUpon>ControlEmployeeNewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlManagerNewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlManagerNewUser.Designer.cs">
+      <DependentUpon>ControlManagerNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlManagerShowAllUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlManagerShowAllUsers.Designer.cs">
+      <DependentUpon>ControlManagerShowAllUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContorlEmployeeNewCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContorlEmployeeNewCart.Designer.cs">
+      <DependentUpon>ContorlEmployeeNewCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="taskDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>taskDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlEmployeeShowAllProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlEmployeeShowAllProducts.Designer.cs">
+      <DependentUpon>ControlEmployeeShowAllProducts.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ContorlEmployeeCheckout.resx">
+      <DependentUpon>ContorlEmployeeCheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlEmployeeEditProduct.resx">
+      <DependentUpon>ControlEmployeeEditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlManagerEditUser.resx">
+      <DependentUpon>ControlManagerEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlEmployeeNewProduct.resx">
+      <DependentUpon>ControlEmployeeNewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlManagerNewUser.resx">
+      <DependentUpon>ControlManagerNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlManagerShowAllUsers.resx">
+      <DependentUpon>ControlManagerShowAllUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContorlEmployeeNewCart.resx">
+      <DependentUpon>ContorlEmployeeNewCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ControlEmployeeShowAllProducts.resx">
+      <DependentUpon>ControlEmployeeShowAllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="taskDataSet.xsc">
+      <DependentUpon>taskDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="taskDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>taskDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="taskDataSet.xss">
+      <DependentUpon>taskDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-background - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_shutdown_poweroff__12422.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ewqr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123sa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123sa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsaf123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsaf1231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-background - Copy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door_Out-512asdf123123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door_Out-512asdf111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door_Out-512asdf1111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-background - Copy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden-Desk-Wallpapers-008-1234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden-Desk-Wallpapers-008-12341.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stripes_1920x1080-abc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stripes_1920x1080-abc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stripes_1920x1080-abc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stripes_1920x1080-abc3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden-Desk-Wallpapers-008-12342.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-abstract-background-123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\355188-widescreen-black-grunge-background-1920x1080-for-windows-7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\355188-widescreen-black-grunge-background-1920x1080-for-windows-7-345345.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\205746009657e2b23a55941-us-123 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\205746009657e2b23a55941-us-123 - Copy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-123-btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlc_ep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlc_ep1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
